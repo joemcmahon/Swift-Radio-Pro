@@ -318,7 +318,7 @@ class NowPlayingViewController: UIViewController {
     }
     
     @IBAction func shareButtonPressed(_ sender: UIButton) {
-        let songToShare = "I'm listening to \(currentTrack.title) on \(currentStation.name) via Swift Radio Pro"
+        let songToShare = "I'm listening to \(currentTrack.title) by \(currentTrack.artist) via the RadioSpiral iOS app."
         let activityViewController = UIActivityViewController(activityItems: [songToShare, currentTrack.artworkImage!], applicationActivities: nil)
         activityViewController.completionWithItemsHandler = {(activityType: UIActivityType?, completed:Bool, returnedItems:[Any]?, error: Error?) in
             if completed {

@@ -26,8 +26,8 @@ class AboutViewController: UIViewController {
     @IBAction func emailButtonDidTouch(_ sender: UIButton) {
         
         // Use your own email address & subject
-        let receipients = ["matthew.fecher@gmail.com"]
-        let subject = "From Swift Radio App"
+        let receipients = ["admins@radiospiral.net"]
+        let subject = "Via RadioSpiral"
         let messageBody = ""
         
         let configuredMailComposeViewController = configureMailComposeViewController(recepients: receipients, subject: subject, messageBody: messageBody)
@@ -41,7 +41,7 @@ class AboutViewController: UIViewController {
     
     @IBAction func websiteButtonDidTouch(_ sender: UIButton) {
         // Use your own website here
-        guard let url = URL(string: "http://matthewfecher.com") else { return }
+        guard let url = URL(string: "http://radiospiral.net") else { return }
         UIApplication.shared.openURL(url)
     }
 

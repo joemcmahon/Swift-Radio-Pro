@@ -18,24 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="142-uQ-lyQ">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="142-uQ-lyQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-CN-vnc">
-                                <rect key="frame" x="142" y="316" width="90" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="7Ne-Bm-iQL"/>
-                                    <constraint firstAttribute="width" constant="90" id="jJO-YV-uPc"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="142-uQ-lyQ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="2XD-li-Ult"/>
-                            <constraint firstItem="yiw-CN-vnc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZhV-2A-AQ9"/>
                             <constraint firstItem="142-uQ-lyQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mOU-OW-ZGC"/>
                             <constraint firstItem="142-uQ-lyQ" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="qlD-89-AfJ"/>
-                            <constraint firstItem="yiw-CN-vnc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="r7u-yy-47J"/>
                             <constraint firstItem="142-uQ-lyQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rN9-Xk-8n7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -47,7 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="320" height="568"/>
-        <image name="logo" width="90" height="35"/>
+        <image name="splash" width="2048" height="3636"/>
     </resources>
 </document>
