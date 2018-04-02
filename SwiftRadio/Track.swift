@@ -15,11 +15,13 @@ import UIKit
 struct Track {
 	var title: String
 	var artist: String
+    var release: String
     var artworkImage: UIImage?
     var artworkLoaded = false
     
-    init(title: String, artist: String) {
+    init(title: String, artist: String, release: String) {
         self.title = title
         self.artist = artist
+        self.release = release
     }
 }

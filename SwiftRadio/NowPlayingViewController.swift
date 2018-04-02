@@ -33,6 +33,7 @@ class NowPlayingViewController: UIViewController {
     @IBOutlet weak var albumHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var albumImageView: SpringImageView!
     @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
     @IBOutlet weak var stationDescLabel: UILabel!
@@ -151,7 +152,8 @@ class NowPlayingViewController: UIViewController {
         
         currentTrack.artist = track.artist
         currentTrack.title = track.title
-        
+        currentTrack.release = track.release
+
         updateLabels()
     }
     
@@ -247,6 +249,7 @@ class NowPlayingViewController: UIViewController {
             // Radio is (hopefully) streaming properly
             songLabel.text = currentTrack.title
             artistLabel.text = currentTrack.artist
+            titleLabel.text = currentTrack.release
             shouldAnimateSongLabel(animate)
             return
         }
@@ -258,6 +261,7 @@ class NowPlayingViewController: UIViewController {
         
         songLabel.text = statusMessage
         artistLabel.text = currentStation.name
+        titleLabel.text = ""
     
         if animate {
             songLabel.animation = "flash"
@@ -318,7 +322,7 @@ class NowPlayingViewController: UIViewController {
     }
     
     @IBAction func shareButtonPressed(_ sender: UIButton) {
-        let songToShare = "I'm listening to \"\(currentTrack.title)\" by \(currentTrack.artist) via the RadioSpiral iOS app."
+        let songToShare = "I'm listening to \"\(currentTrack.title)\" on \"\(currentTrack.release)\" by \(currentTrack.artist) via the RadioSpiral iOS app."
         let activityViewController = UIActivityViewController(activityItems: [songToShare, currentTrack.artworkImage!], applicationActivities: nil)
         self.present(activityViewController, animated: true, completion: nil)
         activityViewController.completionWithItemsHandler = {(activityType: UIActivityType?, completed:Bool, returnedItems:[Any]?, error: Error?) in

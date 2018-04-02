@@ -228,7 +228,7 @@ class StationsViewController: UIViewController {
         if track?.title == station.name {
             playingTitle += "Now playing ..."
         } else if let track = track {
-            playingTitle += track.title + " - " + track.artist
+            playingTitle += track.title + " - " + track.artist + " - " + track.release
         }
         
         stationNowPlayingButton.setTitle(playingTitle, for: .normal)
@@ -293,6 +293,10 @@ class StationsViewController: UIViewController {
         
         if let title = track?.title {
             nowPlayingInfo[MPMediaItemPropertyTitle] = title
+        }
+        
+        if let release = track?.release {
+            nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = release
         }
         
         // Set the metadata

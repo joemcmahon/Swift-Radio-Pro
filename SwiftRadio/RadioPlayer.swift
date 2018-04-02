@@ -50,12 +50,13 @@ class RadioPlayer {
     //*****************************************************************
     
     // Update the track with an artist name and track name
-    func updateTrackMetadata(artistName: String, trackName: String) {
+    func updateTrackMetadata(artistName: String, trackName: String, releaseName: String) {
         if track == nil {
-            track = Track(title: trackName, artist: artistName)
+            track = Track(title: trackName, artist: artistName, release: releaseName)
         } else {
             track?.title = trackName
             track?.artist = artistName
+            track?.release = releaseName
         }
         
         delegate?.trackDidUpdate(track)
@@ -71,7 +72,7 @@ class RadioPlayer {
     // Reset the track metadata and artwork to use the current station infos
     func resetTrack(with station: RadioStation?) {
         guard let station = station else { track = nil; return }
-        updateTrackMetadata(artistName: station.desc, trackName: station.name)
+        updateTrackMetadata(artistName: station.desc, trackName: station.name, releaseName: "")
         resetArtwork(with: station)
     }
     
@@ -112,15 +113,23 @@ extension RadioPlayer: FRadioPlayerDelegate {
         delegate?.playbackStateDidChange(state)
     }
     
-    func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
-        guard
-            let artistName = artistName, !artistName.isEmpty,
-            let trackName = trackName, !trackName.isEmpty else {
+    func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {
+        guard let rawMetadata = rawValue, !rawMetadata.isEmpty
+        else {
                 resetTrack(with: station)
                 return
         }
-        
-        updateTrackMetadata(artistName: artistName, trackName: trackName)
+        let parts = rawMetadata.components(separatedBy: " - ")
+        NSLog("metadata: %@", parts)
+        if parts.isEmpty {
+            updateTrackMetadata(artistName: "RadioSpiral", trackName: "Captivating Electronica", releaseName: "")
+        } else if parts.count == 3 {
+            updateTrackMetadata(artistName: parts.first!, trackName: parts.last!, releaseName: parts[1])
+        } else if parts.count == 2 {
+            updateTrackMetadata(artistName: parts.first!, trackName: parts.last!, releaseName: "")
+        } else {
+            updateTrackMetadata(artistName: parts.first!, trackName: "", releaseName: "")
+        }
     }
     
     func radioPlayer(_ player: FRadioPlayer, artworkDidChange artworkURL: URL?) {
