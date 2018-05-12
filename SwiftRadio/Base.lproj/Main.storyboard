@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Swift Radio-->
         <scene sceneID="7ik-k3-I0U">
@@ -134,7 +142,7 @@
                         <viewLayoutGuide key="safeArea" id="Rf9-Sj-GRF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Swift Radio" id="OKR-cw-CyI">
-                        <barButtonItem key="leftBarButtonItem" image="icon-hamburger" id="CEi-nw-1dN">
+                        <barButtonItem key="leftBarButtonItem" title="icon-hamburger" image="icon-hamburger" id="CEi-nw-1dN">
                             <connections>
                                 <segue destination="61j-j7-6ve" kind="modal" identifier="ShowMenu" id="MJP-ZO-92b"/>
                             </connections>
@@ -310,7 +318,7 @@
                                             <constraint firstAttribute="width" constant="45" id="f7r-qa-s7e"/>
                                             <constraint firstAttribute="height" constant="45" id="qIK-DO-Pi2"/>
                                         </constraints>
-                                        <state key="normal" image="btn-previous">
+                                        <state key="normal" title="btn-previous" image="btn-previous">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" image="btn-pause"/>
@@ -318,13 +326,13 @@
                                             <action selector="previousPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QGd-YE-aem"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-tN-2wp" userLabel="PauseButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-tN-2wp" userLabel="PlayPauseButton">
                                         <rect key="frame" x="57" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="0QP-4Y-L0R"/>
                                             <constraint firstAttribute="height" constant="45" id="9ls-Nq-FcF"/>
                                         </constraints>
-                                        <state key="normal" image="btn-play">
+                                        <state key="normal" title="btn-play" image="btn-play">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" image="btn-pause"/>
@@ -332,13 +340,13 @@
                                             <action selector="playingPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NEV-en-273"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXK-bZ-bdt" userLabel="PauseButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXK-bZ-bdt" userLabel="StopButton">
                                         <rect key="frame" x="114" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="ebX-Zd-lOX"/>
                                             <constraint firstAttribute="height" constant="45" id="vqL-YC-gUW"/>
                                         </constraints>
-                                        <state key="normal" image="btn-stop">
+                                        <state key="normal" title="btn-stop" image="btn-stop">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" image="btn-pause"/>
@@ -352,7 +360,7 @@
                                             <constraint firstAttribute="height" constant="45" id="ClR-id-HJ9"/>
                                             <constraint firstAttribute="width" constant="45" id="vPQ-1T-f9U"/>
                                         </constraints>
-                                        <state key="normal" image="btn-next">
+                                        <state key="normal" title="btn-next" image="btn-next">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" image="btn-pause"/>
@@ -454,7 +462,7 @@
                                             <constraint firstAttribute="height" constant="26" id="WCg-3H-2ht"/>
                                         </constraints>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="share">
+                                        <state key="normal" title="sharing" image="share">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -507,7 +515,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aXI-gd-81R"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SubPop Records" id="M1Z-0o-hNV" userLabel="Station Title"/>
+                    <navigationItem key="navigationItem" title="Station ID" id="M1Z-0o-hNV" userLabel="Station Title">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2qM-qo-eHk"/>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="albumHeightConstraint" destination="hCD-tK-vVP" id="VlU-n5-VPe"/>

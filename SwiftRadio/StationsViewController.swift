@@ -115,7 +115,7 @@ class StationsViewController: UIViewController {
     
     func createNowPlayingBarButton() {
         guard navigationItem.rightBarButtonItem == nil else { return }
-        let btn = UIBarButtonItem(title: "", style: .plain, target: self, action:#selector(nowPlayingBarButtonPressed))
+        let btn = UIBarButtonItem(title: "btn-nowPlaying", style: .plain, target: self, action:#selector(nowPlayingBarButtonPressed))
         btn.image = UIImage(named: "btn-nowPlaying")
         navigationItem.rightBarButtonItem = btn
     }

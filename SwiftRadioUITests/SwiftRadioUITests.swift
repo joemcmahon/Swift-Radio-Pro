@@ -12,9 +12,10 @@ class SwiftRadioUITests: XCTestCase {
     
     let app = XCUIApplication()
     let stations = XCUIApplication().cells
-    let hamburgerMenu = XCUIApplication().navigationBars["Swift Radio"].buttons["icon hamburger"]
-    let pauseButton = XCUIApplication().buttons["btn pause"]
-    let playButton = XCUIApplication().buttons["btn play"]
+    let hamburgerMenu = XCUIApplication().navigationBars["Swift Radio"].buttons["icon-hamburger"]
+    let pauseButton = XCUIApplication().buttons["btn-play"]
+    let playButton = XCUIApplication().buttons["btn-play"]
+    let stopButton = XCUIApplication().buttons["btn-stop"]
     let volume = XCUIApplication().sliders.element(boundBy: 0)
     
     override func setUp() {
@@ -43,7 +44,7 @@ class SwiftRadioUITests: XCTestCase {
     }
     
     func assertStationsPresent() {
-        let numStations:UInt = 4
+        let numStations:UInt = 1
         XCTAssertEqual(stations.count, Int(numStations))
         
         let texts = stations.staticTexts.count
@@ -51,12 +52,12 @@ class SwiftRadioUITests: XCTestCase {
     }
     
     func assertHamburgerContent() {
-        XCTAssertTrue(app.staticTexts["Created by: Matthew Fecher"].exists)
+        XCTAssertTrue(app.staticTexts["RadioSpiral"].exists)
     }
     
     func assertAboutContent() {
-        XCTAssertTrue(app.buttons["email me"].exists)
-        XCTAssertTrue(app.buttons["matthewfecher.com"].exists)
+        XCTAssertTrue(app.buttons["email us!"].exists)
+        XCTAssertTrue(app.buttons["radiospiral.net"].exists)
     }
     
     func assertPaused() {
@@ -65,19 +66,20 @@ class SwiftRadioUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Station Paused..."].exists);
     }
     
+    func assertStopped() {
+        XCTAssertTrue(playButton.isEnabled)
+        XCTAssertTrue(app.staticTexts["Station Stopped..."].exists);
+    }
+    
     func assertPlaying() {
         XCTAssertTrue(pauseButton.isEnabled)
-        XCTAssertFalse(playButton.isEnabled)
-        XCTAssertFalse(app.staticTexts["Station Paused..."].exists);
+        XCTAssertFalse(app.staticTexts["Station Stopped..."].exists);
     }
     
     func assertStationOnMenu(_ stationName:String) {
-        let button = app.buttons["nowPlaying"];
-        if let value:String = button.label {
-            XCTAssertTrue(value.contains(stationName))
-        } else {
-            XCTAssertTrue(false)
-        }
+        let button = app.buttons["nowPlaying"]
+        let value:String = button.label
+        XCTAssertTrue(value.contains(stationName))
     }
     
     func assertStationInfo() {
@@ -97,6 +99,14 @@ class SwiftRadioUITests: XCTestCase {
         self.waitForExpectations(timeout: 25.0, handler: nil)
 
     }
+
+    func waitForStationToRestart() {
+        self.expectation(
+            for: NSPredicate(format: "exists == 0"),
+            evaluatedWith: app.staticTexts["Station Stopped..."],
+            handler:nil)
+        self.waitForExpectations(timeout: 10.0, handler: nil)
+    }
     
     func testMainStationsView() {
         // Use recording to get started writing UI tests.
@@ -113,18 +123,19 @@ class SwiftRadioUITests: XCTestCase {
         assertStationsPresent()
         
         let firstStation = stations.element(boundBy: 0)
-        let stationName:String = firstStation.children(matching: .staticText).element(boundBy: 0).label
+        let stationName:String = firstStation.children(matching: .staticText).element(boundBy: 1).label
         assertStationOnMenu("Choose")
         firstStation.tap()
         waitForStationToLoad();
         
-        pauseButton.tap()
-        assertPaused()
+        stopButton.tap()
+        assertStopped()
         playButton.tap()
+        waitForStationToRestart()
         assertPlaying()
-        app.navigationBars["Sub Pop Radio"].buttons["Back"].tap()
+        app.navigationBars["Radio Spiral"].buttons["Back"].tap()
         assertStationOnMenu(stationName)
-        app.navigationBars["Swift Radio"].buttons["btn nowPlaying"].tap()
+        app.navigationBars["Swift Radio"].buttons["btn-nowPlaying"].tap()
         waitForStationToLoad()
         volume.adjust(toNormalizedSliderPosition: 0.2)
         volume.adjust(toNormalizedSliderPosition: 0.8)
