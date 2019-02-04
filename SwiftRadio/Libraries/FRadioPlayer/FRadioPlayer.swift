@@ -138,7 +138,7 @@ open class FRadioPlayer: NSObject {
     // MARK: - Properties
     
     /// Returns the singleton `FRadioPlayer` instance.
-    open static let shared = FRadioPlayer()
+    public static let shared = FRadioPlayer()
     
     /**
      The delegate object for the `FRadioPlayer`.

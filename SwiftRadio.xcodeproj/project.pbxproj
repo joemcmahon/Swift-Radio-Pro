@@ -323,7 +323,6 @@
 				9409E11B1ABF6FEA00312E2B /* AppDelegate.swift */,
 				CAA8FDB42000614600050F77 /* RadioPlayer.swift */,
 				94D260901B45D20000DE671C /* SwiftRadio-Settings.swift */,
-				9409E1221ABF6FEA00312E2B /* Main.storyboard */,
 				9409E1251ABF6FEA00312E2B /* Images.xcassets */,
 				9409E1191ABF6FEA00312E2B /* Supporting Files */,
 				94D260941B45E0BA00DE671C /* UI Helpers */,
@@ -337,6 +336,7 @@
 			children = (
 				9409E11A1ABF6FEA00312E2B /* Info.plist */,
 				5FDEE0211F72FF980064333C /* LaunchScreen.storyboard */,
+				9409E1221ABF6FEA00312E2B /* Main.storyboard */,
 				71F0FC5320FD21DB004458C8 /* SnapshotSupport.swift */,
 			);
 			name = "Supporting Files";
@@ -419,8 +419,6 @@
 				2C5545B71C1124DE00728469 /* Frameworks */,
 				2C5545B81C1124DE00728469 /* Resources */,
 				716081F42075773400C11DE3 /* ShellScript */,
-				EAD92AB52BC9A42FE2897D4A /* [CP] Embed Pods Frameworks */,
-				119E6B4E1F5C500218C6371C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,8 +456,6 @@
 				71B12F3020759C2A00D7E015 /* Sources */,
 				71B12F3120759C2A00D7E015 /* Frameworks */,
 				71B12F3220759C2A00D7E015 /* Resources */,
-				189460CA3CEDE238BF33FC1C /* [CP] Embed Pods Frameworks */,
-				61AA7F2200BD65C3CEC00509 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -480,7 +476,6 @@
 				9409E1131ABF6FEA00312E2B /* Frameworks */,
 				9409E1141ABF6FEA00312E2B /* Resources */,
 				71F9A51BAD392EABE98ADFA1 /* [CP] Embed Pods Frameworks */,
-				D05B7F518D93E77C5CE72F47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,7 +527,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9409E1111ABF6FE900312E2B /* Build configuration list for PBXProject "SwiftRadio" */;
+			buildConfigurationList = 9409E1111ABF6FE900312E2B /* Build configuration list for PBXProject "swiftradio" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -590,51 +585,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		119E6B4E1F5C500218C6371C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRadioUITests/Pods-SwiftRadioUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		189460CA3CEDE238BF33FC1C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRadioUISnapshots/Pods-SwiftRadioUISnapshots-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61AA7F2200BD65C3CEC00509 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRadioUISnapshots/Pods-SwiftRadioUISnapshots-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		716081F42075773400C11DE3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,36 +654,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D05B7F518D93E77C5CE72F47 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRadio/Pods-SwiftRadio-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EAD92AB52BC9A42FE2897D4A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRadioUITests/Pods-SwiftRadioUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F38087578546E75DB9BF6D18 /* [CP] Check Pods Manifest.lock */ = {
@@ -1197,7 +1117,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9409E1111ABF6FE900312E2B /* Build configuration list for PBXProject "SwiftRadio" */ = {
+		9409E1111ABF6FE900312E2B /* Build configuration list for PBXProject "swiftradio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9409E1361ABF6FEA00312E2B /* Debug */,
