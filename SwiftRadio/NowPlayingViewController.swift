@@ -31,6 +31,7 @@ class NowPlayingViewController: UIViewController {
     // MARK: - IB UI
     
     @IBOutlet weak var albumHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var volumeTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var albumImageView: SpringImageView!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -230,9 +231,21 @@ class NowPlayingViewController: UIViewController {
     
     func optimizeForDeviceSize() {
         
-        // Adjust album size to fit iPhone 4s, 6s & 6s+
+        // Adjust album size and volume slider position to fit
         let deviceHeight = self.view.bounds.height
-        
+        NSLog("-------> height %d", deviceHeight)
+        if deviceHeight == 320 {    // 5s, SE
+            volumeTopConstraint.constant = 54
+            view.updateConstraints()
+        }
+        if deviceHeight == 375 {    // 6, 6s, 7, 8, X, XS
+            volumeTopConstraint.constant = -13
+            view.updateConstraints()
+        }
+        if deviceHeight == 414 {    // 6+, 6s+, 7+, 8+, XR, XS Max
+            volumeTopConstraint.constant = -4
+            view.updateConstraints()
+        }
         if deviceHeight == 480 {
             albumHeightConstraint.constant = 106
             view.updateConstraints()
