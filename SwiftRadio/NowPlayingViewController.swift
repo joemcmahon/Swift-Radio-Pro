@@ -171,7 +171,9 @@ class NowPlayingViewController: UIViewController {
             // Animate artwork
             albumImageView.animation = "wobble"
             albumImageView.duration = 2
-            albumImageView.animate()
+            if !UserDefaults.standard.bool(forKey: "isRunningTests") {
+                albumImageView.animate()
+            }
             stationDescLabel.isHidden = true
         } else {
             stationDescLabel.isHidden = false
@@ -266,7 +268,9 @@ class NowPlayingViewController: UIViewController {
         if animate {
             songLabel.animation = "flash"
             songLabel.repeatCount = 3
-            songLabel.animate()
+            if !UserDefaults.standard.bool(forKey: "isRunningTests") {
+                songLabel.animate()
+            }
         }
     }
     
@@ -280,7 +284,9 @@ class NowPlayingViewController: UIViewController {
         songLabel.animation = "zoomIn"
         songLabel.duration = 1.5
         songLabel.damping = 1
-        songLabel.animate()
+        if !UserDefaults.standard.bool(forKey: "isRunningTests") {
+            songLabel.animate()
+        }
     }
     
     func createNowPlayingAnimation() {
