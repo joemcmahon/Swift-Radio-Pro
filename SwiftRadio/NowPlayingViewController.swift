@@ -27,7 +27,7 @@ protocol NowPlayingViewControllerDelegate: class {
 class NowPlayingViewController: UIViewController {
     
     weak var delegate: NowPlayingViewControllerDelegate?
-
+    
     // MARK: - IB UI
     
     @IBOutlet weak var albumHeightConstraint: NSLayoutConstraint!
@@ -62,9 +62,6 @@ class NowPlayingViewController: UIViewController {
         
         // Create Now Playing BarItem
         createNowPlayingAnimation()
-        
-        // Set AlbumArtwork Constraints
-        optimizeForDeviceSize()
 
         // Set View Title
         self.title = currentStation.name
@@ -80,14 +77,20 @@ class NowPlayingViewController: UIViewController {
         // Setup volumeSlider
         setupVolumeSlider()
         
+        optimizeForDeviceSize(deviceHeight:view.bounds.size.height)
+            
         // Hide / Show Next/Previous buttons
         previousButton.isHidden = hideNextPreviousButtons
         nextButton.isHidden = hideNextPreviousButtons
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        optimizeForDeviceSize()
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        optimizeForDeviceSize(deviceHeight: self.view.bounds.height)
+    }
+    
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        optimizeForDeviceSize(deviceHeight: size.height)
     }
     //*****************************************************************
     // MARK: - Setup
@@ -232,35 +235,31 @@ class NowPlayingViewController: UIViewController {
     //*****************************************************************
     // MARK: - UI Helper Methods
     //*****************************************************************
-    
-    func optimizeForDeviceSize() {
-        
+    func optimizeForDeviceSize(deviceHeight: CGFloat) {
         // Adjust album size and volume slider position to fit
-        let deviceHeight = self.view.bounds.height
         volumeTopConstraint.constant = 45
         NSLog("-------> height %d", deviceHeight)
         if deviceHeight == 320 {    // 5s, SE
             volumeTopConstraint.constant = 54
-            view.updateConstraints()
         }
-        if deviceHeight == 375 {    // 6, 6s, 7, 8, X, XS
+        if deviceHeight == 375 {    // 6, 6s, 7, 8, X, XS LS
             volumeTopConstraint.constant = -13
-            view.updateConstraints()
-        }
-        if deviceHeight == 414 {    // 6+, 6s+, 7+, 8+, XR, XS Max
+        } else if deviceHeight == 414 {    // 6+, 6s+, 7+, 8+, XR, XS Max LS
             volumeTopConstraint.constant = -4
-            view.updateConstraints()
-        }
-        if deviceHeight == 480 {
+        } else if deviceHeight == 320 {    // 5s, SE LS
+            volumeTopConstraint.constant = 54
+        }else if deviceHeight == 375 {    // 6, 6s, 7, 8, X, XS LS
+            volumeTopConstraint.constant = -13
+        } else if deviceHeight == 414 {    // 6+, 6s+, 7+, 8+, XR, XS Max LS
+            volumeTopConstraint.constant = -4
+        } else if deviceHeight == 480 {
             albumHeightConstraint.constant = 106
-            view.updateConstraints()
         } else if deviceHeight == 667 {
             albumHeightConstraint.constant = 230
-            view.updateConstraints()
         } else if deviceHeight > 667 {
             albumHeightConstraint.constant = 260
-            view.updateConstraints()
         }
+        view.updateConstraints()
     }
     
     func updateLabels(with statusMessage: String? = nil, animate: Bool = true) {
