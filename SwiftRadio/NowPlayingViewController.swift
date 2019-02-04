@@ -85,6 +85,10 @@ class NowPlayingViewController: UIViewController {
         nextButton.isHidden = hideNextPreviousButtons
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        optimizeForDeviceSize()
+    }
     //*****************************************************************
     // MARK: - Setup
     //*****************************************************************
@@ -233,6 +237,7 @@ class NowPlayingViewController: UIViewController {
         
         // Adjust album size and volume slider position to fit
         let deviceHeight = self.view.bounds.height
+        volumeTopConstraint.constant = 45
         NSLog("-------> height %d", deviceHeight)
         if deviceHeight == 320 {    // 5s, SE
             volumeTopConstraint.constant = 54
