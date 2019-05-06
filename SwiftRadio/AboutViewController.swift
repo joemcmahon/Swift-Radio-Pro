@@ -26,8 +26,8 @@ class AboutViewController: UIViewController {
     @IBAction func emailButtonDidTouch(_ sender: UIButton) {
         
         // Use your own email address & subject
-        let receipients = ["admins@radiospiral.net"]
-        let subject = "Via RadioSpiral"
+        let receipients = ["app@radiospiral.net"]
+        let subject = "RadioSpiral User mail"
         let messageBody = ""
         
         let configuredMailComposeViewController = configureMailComposeViewController(recepients: receipients, subject: subject, messageBody: messageBody)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -292,7 +292,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-Wr-UiK" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obn-8m-awZ" userLabel="AlbumArt" customClass="SpringImageView" customModule="SwiftRadio" customModuleProvider="target">
                                 <rect key="frame" x="70" y="101" width="274" height="180"/>
@@ -372,10 +372,10 @@
                                         </constraints>
                                     </imageView>
                                     <view alpha="0.49999999999999961" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-rb-EKQ" userLabel="Volume View">
-                                        <rect key="frame" x="26" y="7.3333333333333144" width="338" height="45"/>
+                                        <rect key="frame" x="26" y="7.6666666666666856" width="338" height="45"/>
                                         <subviews>
                                             <slider hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iFC-eW-7WA">
-                                                <rect key="frame" x="6" y="22.666666666666686" width="326" height="31"/>
+                                                <rect key="frame" x="6" y="22.333333333333314" width="326" height="31"/>
                                             </slider>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -399,7 +399,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-4c-kRh" userLabel="Company-Button">
-                                <rect key="frame" x="12" y="524" width="90" height="36"/>
+                                <rect key="frame" x="12" y="692" width="90" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Qr8-LJ-AFv"/>
                                     <constraint firstAttribute="height" constant="36" id="m1i-gc-0rZ"/>
@@ -412,7 +412,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-am-LP5">
-                                <rect key="frame" x="344" y="529" width="58" height="26"/>
+                                <rect key="frame" x="344" y="697" width="58" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BY-Uw-fd7" userLabel="Share Button">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -447,7 +447,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-4F-WCE" userLabel="Labels Stack View">
-                                <rect key="frame" x="74.333333333333343" y="425" width="265.66666666666663" height="87"/>
+                                <rect key="frame" x="74.333333333333343" y="593" width="265.66666666666663" height="87"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-ZG-rx5" userLabel="Song Label" customClass="SpringLabel" customModule="SwiftRadio" customModuleProvider="target">
                                         <rect key="frame" x="67.333333333333314" y="0.0" width="131" height="31.333333333333332"/>
@@ -809,8 +809,8 @@ Downtime DJ and attitude:
         <image name="btn-previous" width="44" height="44"/>
         <image name="btn-stop" width="44" height="44"/>
         <image name="icon-hamburger" width="22" height="16"/>
-        <image name="logo" width="180" height="71"/>
-        <image name="radiospiral" width="128.8800048828125" height="77.760002136230469"/>
+        <image name="logo" width="60" height="23.666666030883789"/>
+        <image name="radiospiral" width="179" height="108"/>
         <image name="share" width="32" height="32"/>
         <image name="stationImage" width="120" height="75"/>
         <image name="vol-max" width="16.666666030883789" height="14"/>
