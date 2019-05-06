@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
                BuildableName = "SwiftRadio.app"
                BlueprintName = "SwiftRadio"
-               ReferencedContainer = "container:SwiftRadio.xcodeproj">
+               ReferencedContainer = "container:swiftradio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "2C5545B91C1124DE00728469"
                BuildableName = "SwiftRadioUITests.xctest"
                BlueprintName = "SwiftRadioUITests"
-               ReferencedContainer = "container:SwiftRadio.xcodeproj">
+               ReferencedContainer = "container:swiftradio.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
             BuildableName = "SwiftRadio.app"
             BlueprintName = "SwiftRadio"
-            ReferencedContainer = "container:SwiftRadio.xcodeproj">
+            ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
             BuildableName = "SwiftRadio.app"
             BlueprintName = "SwiftRadio"
-            ReferencedContainer = "container:SwiftRadio.xcodeproj">
+            ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
             BuildableName = "SwiftRadio.app"
             BlueprintName = "SwiftRadio"
-            ReferencedContainer = "container:SwiftRadio.xcodeproj">
+            ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
