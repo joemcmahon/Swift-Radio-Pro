@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.1)
+  - MarqueeLabel/Swift (3.2.0)
+  - ReachabilitySwift (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MarqueeLabel/Swift
+  - ReachabilitySwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MarqueeLabel
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+
+PODFILE CHECKSUM: 85c24c8a1f754f81dd1a91928473047eb43651da
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "d4300b31c737f68a7c12a72e8d4f7718"
+build_time: [1523155989, 834484000]
+inputs:
+  "/Users/joemcmahon/Dropbox/Code/RadioSpiral App/SwiftRadioUISnapshots/SwiftRadioUISnapshots.swift": !dirty [1522889953, 0]
+  "/Users/joemcmahon/Dropbox/Code/RadioSpiral App/SwiftRadioUISnapshots/SnapshotHelper.swift": !dirty [1522875670, 0]

@@ -1,0 +1,6 @@
+framework module Pods_SwiftRadioUISnapshots {
+  umbrella header "Pods-SwiftRadioUISnapshots-umbrella.h"
+
+  export *
+  module * { export * }
+}

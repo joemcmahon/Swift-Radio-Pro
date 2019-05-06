@@ -1,0 +1,491 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwiftRadioUISnapshots"
+provides-nominal:
+- "21SwiftRadioUISnapshotsAAC"
+provides-member:
+- ["21SwiftRadioUISnapshotsAAC", ""]
+provides-dynamic-lookup:
+- "assertStationOnMenu"
+- "setUp"
+- "tearDown"
+- "testMainStationsView"
+- "waitForCover"
+- "waitForStationToLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "NSPredicate"
+- "String"
+- !private "StringLiteralType"
+- "SwiftRadioUISnapshots"
+- !private "XCTAssertTrue"
+- "XCTestCase"
+- !private "XCUIApplication"
+- !private "app"
+- !private "setupSnapshot"
+- !private "snapshot"
+- !private "stations"
+- !private "waitForLogo"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "contains"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s7CVarArgP", "NSPredicate"]
+- !private ["s7CVarArgP", "XCTAssertTrue"]
+- !private ["s7CVarArgP", "XCUIApplication"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "app"]
+- !private ["s7CVarArgP", "assertStationOnMenu"]
+- !private ["s7CVarArgP", "buttons"]
+- !private ["s7CVarArgP", "cells"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "continueAfterFailure"]
+- !private ["s7CVarArgP", "expectation"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "launch"]
+- !private ["s7CVarArgP", "navigationBars"]
+- !private ["s7CVarArgP", "setUp"]
+- !private ["s7CVarArgP", "setupSnapshot"]
+- !private ["s7CVarArgP", "snapshot"]
+- !private ["s7CVarArgP", "stations"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tearDown"]
+- !private ["s7CVarArgP", "waitForCover"]
+- !private ["s7CVarArgP", "waitForExpectations"]
+- !private ["s7CVarArgP", "waitForLogo"]
+- !private ["s7CVarArgP", "waitForStationToLoad"]
+- !private ["s10CollectionP", "contains"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "contains"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "NSPredicate"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTAssertTrue"]
+- !private ["s28CustomDebugStringConvertibleP", "XCUIApplication"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "app"]
+- !private ["s28CustomDebugStringConvertibleP", "assertStationOnMenu"]
+- !private ["s28CustomDebugStringConvertibleP", "buttons"]
+- !private ["s28CustomDebugStringConvertibleP", "cells"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "continueAfterFailure"]
+- !private ["s28CustomDebugStringConvertibleP", "expectation"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "launch"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationBars"]
+- !private ["s28CustomDebugStringConvertibleP", "setUp"]
+- !private ["s28CustomDebugStringConvertibleP", "setupSnapshot"]
+- !private ["s28CustomDebugStringConvertibleP", "snapshot"]
+- !private ["s28CustomDebugStringConvertibleP", "stations"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tearDown"]
+- !private ["s28CustomDebugStringConvertibleP", "waitForCover"]
+- !private ["s28CustomDebugStringConvertibleP", "waitForExpectations"]
+- !private ["s28CustomDebugStringConvertibleP", "waitForLogo"]
+- !private ["s28CustomDebugStringConvertibleP", "waitForStationToLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "contains"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "NSPredicate"]
+- !private ["s23CustomStringConvertibleP", "XCTAssertTrue"]
+- !private ["s23CustomStringConvertibleP", "XCUIApplication"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "app"]
+- !private ["s23CustomStringConvertibleP", "assertStationOnMenu"]
+- !private ["s23CustomStringConvertibleP", "buttons"]
+- !private ["s23CustomStringConvertibleP", "cells"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "continueAfterFailure"]
+- !private ["s23CustomStringConvertibleP", "expectation"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "launch"]
+- !private ["s23CustomStringConvertibleP", "navigationBars"]
+- !private ["s23CustomStringConvertibleP", "setUp"]
+- !private ["s23CustomStringConvertibleP", "setupSnapshot"]
+- !private ["s23CustomStringConvertibleP", "snapshot"]
+- !private ["s23CustomStringConvertibleP", "stations"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tearDown"]
+- !private ["s23CustomStringConvertibleP", "waitForCover"]
+- !private ["s23CustomStringConvertibleP", "waitForExpectations"]
+- !private ["s23CustomStringConvertibleP", "waitForLogo"]
+- !private ["s23CustomStringConvertibleP", "waitForStationToLoad"]
+- !private ["s9DecodableP", "contains"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "contains"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "NSPredicate"]
+- !private ["s9EquatableP", "XCTAssertTrue"]
+- !private ["s9EquatableP", "XCUIApplication"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "app"]
+- !private ["s9EquatableP", "assertStationOnMenu"]
+- !private ["s9EquatableP", "buttons"]
+- !private ["s9EquatableP", "cells"]
+- !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "continueAfterFailure"]
+- !private ["s9EquatableP", "expectation"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "launch"]
+- !private ["s9EquatableP", "navigationBars"]
+- !private ["s9EquatableP", "setUp"]
+- !private ["s9EquatableP", "setupSnapshot"]
+- !private ["s9EquatableP", "snapshot"]
+- !private ["s9EquatableP", "stations"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "tearDown"]
+- !private ["s9EquatableP", "waitForCover"]
+- !private ["s9EquatableP", "waitForExpectations"]
+- !private ["s9EquatableP", "waitForLogo"]
+- !private ["s9EquatableP", "waitForStationToLoad"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "contains"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "contains"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "NSPredicate"]
+- !private ["s8HashableP", "XCTAssertTrue"]
+- !private ["s8HashableP", "XCUIApplication"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "app"]
+- !private ["s8HashableP", "assertStationOnMenu"]
+- !private ["s8HashableP", "buttons"]
+- !private ["s8HashableP", "cells"]
+- !private ["s8HashableP", "contains"]
+- !private ["s8HashableP", "continueAfterFailure"]
+- !private ["s8HashableP", "expectation"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "launch"]
+- !private ["s8HashableP", "navigationBars"]
+- !private ["s8HashableP", "setUp"]
+- !private ["s8HashableP", "setupSnapshot"]
+- !private ["s8HashableP", "snapshot"]
+- !private ["s8HashableP", "stations"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "tearDown"]
+- !private ["s8HashableP", "waitForCover"]
+- !private ["s8HashableP", "waitForExpectations"]
+- !private ["s8HashableP", "waitForLogo"]
+- !private ["s8HashableP", "waitForStationToLoad"]
+- !private ["s25LosslessStringConvertibleP", "contains"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "contains"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "contains"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "contains"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "contains"]
+- !private ["So21NSItemProviderWritingP", "contains"]
+- !private ["So16NSMutableCopyingP", "contains"]
+- !private ["So8NSObjectC", "NSPredicate"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "XCTAssertTrue"]
+- !private ["So8NSObjectC", "XCUIApplication"]
+- !private ["So8NSObjectC", "app"]
+- ["So8NSObjectC", "assertStationOnMenu"]
+- !private ["So8NSObjectC", "buttons"]
+- !private ["So8NSObjectC", "cells"]
+- !private ["So8NSObjectC", "contains"]
+- !private ["So8NSObjectC", "continueAfterFailure"]
+- !private ["So8NSObjectC", "expectation"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "launch"]
+- !private ["So8NSObjectC", "navigationBars"]
+- ["So8NSObjectC", "setUp"]
+- !private ["So8NSObjectC", "setupSnapshot"]
+- !private ["So8NSObjectC", "snapshot"]
+- !private ["So8NSObjectC", "stations"]
+- !private ["So8NSObjectC", "subscript"]
+- ["So8NSObjectC", "tearDown"]
+- ["So8NSObjectC", "testMainStationsView"]
+- ["So8NSObjectC", "waitForCover"]
+- !private ["So8NSObjectC", "waitForExpectations"]
+- !private ["So8NSObjectC", "waitForLogo"]
+- ["So8NSObjectC", "waitForStationToLoad"]
+- !private ["So16NSObjectProtocolP", "NSPredicate"]
+- !private ["So16NSObjectProtocolP", "XCTAssertTrue"]
+- !private ["So16NSObjectProtocolP", "XCUIApplication"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "app"]
+- !private ["So16NSObjectProtocolP", "assertStationOnMenu"]
+- !private ["So16NSObjectProtocolP", "buttons"]
+- !private ["So16NSObjectProtocolP", "cells"]
+- !private ["So16NSObjectProtocolP", "contains"]
+- !private ["So16NSObjectProtocolP", "continueAfterFailure"]
+- !private ["So16NSObjectProtocolP", "expectation"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "launch"]
+- !private ["So16NSObjectProtocolP", "navigationBars"]
+- !private ["So16NSObjectProtocolP", "setUp"]
+- !private ["So16NSObjectProtocolP", "setupSnapshot"]
+- !private ["So16NSObjectProtocolP", "snapshot"]
+- !private ["So16NSObjectProtocolP", "stations"]
+- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So16NSObjectProtocolP", "tearDown"]
+- !private ["So16NSObjectProtocolP", "waitForCover"]
+- !private ["So16NSObjectProtocolP", "waitForExpectations"]
+- !private ["So16NSObjectProtocolP", "waitForLogo"]
+- !private ["So16NSObjectProtocolP", "waitForStationToLoad"]
+- !private ["So11NSPredicateC", "init"]
+- !private ["So14NSSecureCodingP", "contains"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "contains"]
+- !private ["s26RangeReplaceableCollectionP", "contains"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "contains"]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "contains"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "contains"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["21SwiftRadioUISnapshotsAAC", "NSPredicate"]
+- ["21SwiftRadioUISnapshotsAAC", "String"]
+- !private ["21SwiftRadioUISnapshotsAAC", "XCTAssertTrue"]
+- !private ["21SwiftRadioUISnapshotsAAC", "XCUIApplication"]
+- !private ["21SwiftRadioUISnapshotsAAC", "app"]
+- ["21SwiftRadioUISnapshotsAAC", "assertStationOnMenu"]
+- !private ["21SwiftRadioUISnapshotsAAC", "continueAfterFailure"]
+- ["21SwiftRadioUISnapshotsAAC", "deinit"]
+- !private ["21SwiftRadioUISnapshotsAAC", "expectation"]
+- ["21SwiftRadioUISnapshotsAAC", "init"]
+- ["21SwiftRadioUISnapshotsAAC", "setUp"]
+- !private ["21SwiftRadioUISnapshotsAAC", "setupSnapshot"]
+- !private ["21SwiftRadioUISnapshotsAAC", "snapshot"]
+- !private ["21SwiftRadioUISnapshotsAAC", "stations"]
+- ["21SwiftRadioUISnapshotsAAC", "tearDown"]
+- ["21SwiftRadioUISnapshotsAAC", "testMainStationsView"]
+- ["21SwiftRadioUISnapshotsAAC", "waitForCover"]
+- !private ["21SwiftRadioUISnapshotsAAC", "waitForExpectations"]
+- !private ["21SwiftRadioUISnapshotsAAC", "waitForLogo"]
+- ["21SwiftRadioUISnapshotsAAC", "waitForStationToLoad"]
+- !private ["s16TextOutputStreamP", "contains"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "contains"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So11XCTActivityP", "NSPredicate"]
+- !private ["So11XCTActivityP", "XCTAssertTrue"]
+- !private ["So11XCTActivityP", "XCUIApplication"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "app"]
+- !private ["So11XCTActivityP", "assertStationOnMenu"]
+- !private ["So11XCTActivityP", "continueAfterFailure"]
+- !private ["So11XCTActivityP", "expectation"]
+- !private ["So11XCTActivityP", "init"]
+- !private ["So11XCTActivityP", "setUp"]
+- !private ["So11XCTActivityP", "setupSnapshot"]
+- !private ["So11XCTActivityP", "snapshot"]
+- !private ["So11XCTActivityP", "stations"]
+- !private ["So11XCTActivityP", "tearDown"]
+- !private ["So11XCTActivityP", "waitForCover"]
+- !private ["So11XCTActivityP", "waitForExpectations"]
+- !private ["So11XCTActivityP", "waitForLogo"]
+- !private ["So11XCTActivityP", "waitForStationToLoad"]
+- !private ["So17XCTWaiterDelegateP", "NSPredicate"]
+- !private ["So17XCTWaiterDelegateP", "XCTAssertTrue"]
+- !private ["So17XCTWaiterDelegateP", "XCUIApplication"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "app"]
+- !private ["So17XCTWaiterDelegateP", "assertStationOnMenu"]
+- !private ["So17XCTWaiterDelegateP", "continueAfterFailure"]
+- !private ["So17XCTWaiterDelegateP", "expectation"]
+- !private ["So17XCTWaiterDelegateP", "init"]
+- !private ["So17XCTWaiterDelegateP", "setUp"]
+- !private ["So17XCTWaiterDelegateP", "setupSnapshot"]
+- !private ["So17XCTWaiterDelegateP", "snapshot"]
+- !private ["So17XCTWaiterDelegateP", "stations"]
+- !private ["So17XCTWaiterDelegateP", "tearDown"]
+- !private ["So17XCTWaiterDelegateP", "waitForCover"]
+- !private ["So17XCTWaiterDelegateP", "waitForExpectations"]
+- !private ["So17XCTWaiterDelegateP", "waitForLogo"]
+- !private ["So17XCTWaiterDelegateP", "waitForStationToLoad"]
+- !private ["So6XCTestC", "NSPredicate"]
+- ["So6XCTestC", "String"]
+- !private ["So6XCTestC", "XCTAssertTrue"]
+- !private ["So6XCTestC", "XCUIApplication"]
+- !private ["So6XCTestC", "app"]
+- ["So6XCTestC", "assertStationOnMenu"]
+- !private ["So6XCTestC", "continueAfterFailure"]
+- !private ["So6XCTestC", "expectation"]
+- ["So6XCTestC", "init"]
+- ["So6XCTestC", "setUp"]
+- !private ["So6XCTestC", "setupSnapshot"]
+- !private ["So6XCTestC", "snapshot"]
+- !private ["So6XCTestC", "stations"]
+- ["So6XCTestC", "tearDown"]
+- ["So6XCTestC", "testMainStationsView"]
+- ["So6XCTestC", "waitForCover"]
+- !private ["So6XCTestC", "waitForExpectations"]
+- !private ["So6XCTestC", "waitForLogo"]
+- ["So6XCTestC", "waitForStationToLoad"]
+- !private ["So10XCTestCaseC", "NSPredicate"]
+- ["So10XCTestCaseC", "String"]
+- !private ["So10XCTestCaseC", "XCTAssertTrue"]
+- !private ["So10XCTestCaseC", "XCUIApplication"]
+- ["So10XCTestCaseC", ""]
+- !private ["So10XCTestCaseC", "app"]
+- ["So10XCTestCaseC", "assertStationOnMenu"]
+- !private ["So10XCTestCaseC", "continueAfterFailure"]
+- !private ["So10XCTestCaseC", "expectation"]
+- ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "setUp"]
+- !private ["So10XCTestCaseC", "setupSnapshot"]
+- !private ["So10XCTestCaseC", "snapshot"]
+- !private ["So10XCTestCaseC", "stations"]
+- ["So10XCTestCaseC", "tearDown"]
+- ["So10XCTestCaseC", "testMainStationsView"]
+- ["So10XCTestCaseC", "waitForCover"]
+- !private ["So10XCTestCaseC", "waitForExpectations"]
+- !private ["So10XCTestCaseC", "waitForLogo"]
+- ["So10XCTestCaseC", "waitForStationToLoad"]
+- !private ["So15XCUIApplicationC", "cells"]
+- !private ["So15XCUIApplicationC", "init"]
+- !private ["So15XCUIApplicationC", "launch"]
+- !private ["So15XCUIApplicationC", "navigationBars"]
+- !private ["So11XCUIElementC", "buttons"]
+- !private ["So11XCUIElementC", "cells"]
+- !private ["So11XCUIElementC", "init"]
+- !private ["So11XCUIElementC", "launch"]
+- !private ["So11XCUIElementC", "navigationBars"]
+- !private ["So21XCUIElementAttributesP", "buttons"]
+- !private ["So21XCUIElementAttributesP", "cells"]
+- !private ["So21XCUIElementAttributesP", "init"]
+- !private ["So21XCUIElementAttributesP", "launch"]
+- !private ["So21XCUIElementAttributesP", "navigationBars"]
+- !private ["So16XCUIElementQueryC", "subscript"]
+- !private ["So28XCUIElementTypeQueryProviderP", "buttons"]
+- !private ["So28XCUIElementTypeQueryProviderP", "cells"]
+- !private ["So28XCUIElementTypeQueryProviderP", "init"]
+- !private ["So28XCUIElementTypeQueryProviderP", "launch"]
+- !private ["So28XCUIElementTypeQueryProviderP", "navigationBars"]
+- !private ["So28XCUIElementTypeQueryProviderP", "subscript"]
+- !private ["So23XCUIScreenshotProvidingP", "buttons"]
+- !private ["So23XCUIScreenshotProvidingP", "cells"]
+- !private ["So23XCUIScreenshotProvidingP", "init"]
+- !private ["So23XCUIScreenshotProvidingP", "launch"]
+- !private ["So23XCUIScreenshotProvidingP", "navigationBars"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "contains"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "contains"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "contains"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "contains"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPredicate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTAssertTrue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCUIApplication"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "app"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "assertStationOnMenu"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "buttons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cells"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "continueAfterFailure"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "expectation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "launch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBars"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupSnapshot"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "snapshot"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tearDown"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "waitForCover"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "waitForExpectations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "waitForLogo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "waitForStationToLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "contains"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So11NSPredicateC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- "21SwiftRadioUISnapshotsAAC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "So15XCUIApplicationC"
+- !private "So11XCUIElementC"
+- !private "So21XCUIElementAttributesP"
+- !private "So16XCUIElementQueryC"
+- !private "So28XCUIElementTypeQueryProviderP"
+- !private "So23XCUIScreenshotProvidingP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/XCTest.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "842160c0bff432b6dadc030742449afc"
