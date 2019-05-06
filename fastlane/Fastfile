@@ -16,4 +16,19 @@ platform :ios do
   lane :screenshots do
     capture_screenshots(scheme: "SwiftRadioUISnapshots")
   end
+
+  desc "Release beta"
+  lane :beta do
+    increment_build_number
+    build_app(scheme: "SwiftRadio")
+    upload_to_testflight
+  end
+
+  desc "Release for real"
+  lane :release do
+    capture_screenshots(scheme: "SwiftRadioUISnapshots")
+    build_app
+    upload_to_app_store       # Upload the screenshots and the binary to iTunes
+    slack                     # Let your team-mates know the new version is live
+  end
 end

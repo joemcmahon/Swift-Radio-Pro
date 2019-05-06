@@ -1,4 +1,4 @@
-app_identifier("com.pemungkah.RadioSpiral") # The bundle identifier of your app
+app_identifier("com.pemungkah.radiospiral") # The bundle identifier of your app
 # apple_id("[[APPLE_ID]]") # Your Apple email address
 
 

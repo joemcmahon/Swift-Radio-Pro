@@ -1033,7 +1033,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 7;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1043,7 +1043,7 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pemungkah.RadioSpiral;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pemungkah.radiospiral;
 				PRODUCT_NAME = SwiftRadio;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1066,7 +1066,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph McMahon (XQ95R42EME)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 7;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1076,7 +1076,7 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pemungkah.RadioSpiral;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pemungkah.radiospiral;
 				PRODUCT_NAME = SwiftRadio;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
