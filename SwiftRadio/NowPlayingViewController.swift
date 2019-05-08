@@ -238,7 +238,6 @@ class NowPlayingViewController: UIViewController {
     func optimizeForDeviceSize(deviceHeight: CGFloat) {
         // Adjust album size and volume slider position to fit
         volumeTopConstraint.constant = 45
-        NSLog("-------> height %d", deviceHeight)
         if deviceHeight == 320 {    // 5s, SE
             volumeTopConstraint.constant = 54
         }
