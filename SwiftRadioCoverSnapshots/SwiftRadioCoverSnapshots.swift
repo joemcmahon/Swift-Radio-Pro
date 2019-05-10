@@ -27,10 +27,10 @@ class SwiftRadioSnapshots: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-
+        
         setupSnapshot(app)
         app.launch()
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -102,7 +102,7 @@ class SwiftRadioSnapshots: XCTestCase {
             for: NSPredicate(format: "exists = 0"),
             evaluatedWith: app.staticTexts["Captivating Electronica"],
             handler: nil)
-        self.waitForExpectations(timeout: 600.0, handler: nil)
+        self.waitForExpectations(timeout: 3600.0, handler: nil)
         sleep(5)
     }
     
@@ -122,44 +122,44 @@ class SwiftRadioSnapshots: XCTestCase {
         assertStationsPresent()
         snapshot("01stations")
         
-/*        hamburgerMenu.tap()
-        assertHamburgerContent()
-        app.buttons["About"].tap()
-        snapshot("02about")
-        assertAboutContent()
-        app.buttons["Okay"].tap()
-        app.buttons["btn close"].tap()
-        assertStationsPresent() */
+        /*        hamburgerMenu.tap()
+         assertHamburgerContent()
+         app.buttons["About"].tap()
+         snapshot("02about")
+         assertAboutContent()
+         app.buttons["Okay"].tap()
+         app.buttons["btn close"].tap()
+         assertStationsPresent() */
         
         let firstStation = stations.element(boundBy: 0)
         let stationName:String = firstStation.children(matching: .staticText).element(boundBy: 1).label
         assertStationOnMenu("Choose")
         firstStation.tap()
         waitForStationToLoad()
-        // waitForTitleToAppear()
-        snapshot("02play")
-/*        stopButton.tap()
-        assertStopped()
-        snapshot("04stop")
-        playButton.tap()
-        waitForStationToRestart()
         waitForTitleToAppear()
-        assertPlaying()  */
+        snapshot("02coverplay")
+        /*        stopButton.tap()
+         assertStopped()
+         snapshot("04stop")
+         playButton.tap()
+         waitForStationToRestart()
+         waitForTitleToAppear()
+         assertPlaying()
         app.navigationBars["Radio Spiral"].buttons["Back"].tap()
         assertStationOnMenu(stationName)
-        snapshot("05playonlist")
+        //snapshot("05playonlist")
         app.navigationBars["Swift Radio"].buttons["btn-nowPlaying"].tap()
         waitForStationToLoad()
         volume.adjust(toNormalizedSliderPosition: 0.2)
         volume.adjust(toNormalizedSliderPosition: 0.8)
         snapshot("06voladjust")
         volume.adjust(toNormalizedSliderPosition: 0.5)
-/*        app.buttons["More Info"].tap()
-        assertStationInfo()
-        snapshot("06info")
-        app.buttons["Okay"].tap() */
+        app.buttons["More Info"].tap()
+         assertStationInfo()
+         snapshot("06info")
+         app.buttons["Okay"].tap() */
         app.buttons["sharing"].tap()
         sleep(2)
-        snapshot("07share")
+        snapshot("07covershare")
     }
 }

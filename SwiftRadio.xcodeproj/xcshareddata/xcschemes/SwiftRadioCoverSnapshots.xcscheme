@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
-               BuildableName = "SwiftRadio.app"
-               BlueprintName = "SwiftRadio"
+               BlueprintIdentifier = "7177E8CA20FC7DA20023E499"
+               BuildableName = "SwiftRadioSnapshots.xctest"
+               BlueprintName = "SwiftRadioSnapshots"
                ReferencedContainer = "container:swiftradio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
-            BuildableName = "SwiftRadio.app"
-            BlueprintName = "SwiftRadio"
+            BlueprintIdentifier = "7177E8CA20FC7DA20023E499"
+            BuildableName = "SwiftRadioSnapshots.xctest"
+            BlueprintName = "SwiftRadioSnapshots"
             ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
-            BuildableName = "SwiftRadio.app"
-            BlueprintName = "SwiftRadio"
+            BlueprintIdentifier = "7177E8CA20FC7DA20023E499"
+            BuildableName = "SwiftRadioSnapshots.xctest"
+            BlueprintName = "SwiftRadioSnapshots"
             ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9409E1151ABF6FEA00312E2B"
-            BuildableName = "SwiftRadio.app"
-            BlueprintName = "SwiftRadio"
+            BlueprintIdentifier = "7177E8CA20FC7DA20023E499"
+            BuildableName = "SwiftRadioSnapshots.xctest"
+            BlueprintName = "SwiftRadioSnapshots"
             ReferencedContainer = "container:swiftradio.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

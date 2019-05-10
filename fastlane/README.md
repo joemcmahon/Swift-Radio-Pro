@@ -20,11 +20,18 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios screenshots
 ```
-Generate new localized screenshots
+Generate new localized screenshots, no cover
+### ios covershots
+```
+fastlane ios covershots
+```
+Generate new localized screenshots, with cover
 ### ios beta
 ```
 fastlane ios beta
 ```
+Add frames
+
 Release beta
 ### ios release
 ```

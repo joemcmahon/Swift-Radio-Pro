@@ -12,9 +12,27 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Generate new localized screenshots"
+  desc "Generate new localized screenshots, no cover"
   lane :screenshots do
-    capture_screenshots(scheme: "SwiftRadioUISnapshots")
+    capture_screenshots(
+    scheme: "SwiftRadioSnapshots",
+    output_simulator_logs: true,
+    clear_previous_screenshots: false,
+    )
+  end
+
+  desc "Generate new localized screenshots, with cover"
+  lane :covershots do
+    capture_screenshots(
+    scheme: "SwiftRadioCoverSnapshots",
+    output_simulator_logs: true,
+    clear_previous_screenshots: false,
+    )
+  end
+
+  desc "Add frames"
+  lane :frame do
+    frame_screenshots(gold: true) 
   end
 
   desc "Release beta"
@@ -26,9 +44,7 @@ platform :ios do
 
   desc "Release for real"
   lane :release do
-    capture_screenshots(scheme: "SwiftRadioUISnapshots")
     build_app
     upload_to_app_store       # Upload the screenshots and the binary to iTunes
-    slack                     # Let your team-mates know the new version is live
   end
 end
