@@ -26,12 +26,15 @@ Generate new localized screenshots, no cover
 fastlane ios covershots
 ```
 Generate new localized screenshots, with cover
+### ios frame
+```
+fastlane ios frame
+```
+Add frames
 ### ios beta
 ```
 fastlane ios beta
 ```
-Add frames
-
 Release beta
 ### ios release
 ```
