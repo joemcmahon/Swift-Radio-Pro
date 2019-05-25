@@ -15,11 +15,12 @@ internal struct FRadioAPI {
     
     static func getArtwork(for metadata: String, size: Int, completionHandler: @escaping (_ artworkURL: URL?) -> ()) {
         
-        guard !metadata.isEmpty, metadata !=  " - ", let url = getURL(with: metadata) else {
+        // Turn off artwork loading until Apple is happy with us loading the art.
+        //guard !metadata.isEmpty, metadata !=  " - ", let url = getURL(with: metadata) else {
             completionHandler(nil)
             return
-        }
-        
+        //}
+        /*
         URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             guard error == nil, let data = data else {
                 completionHandler(nil)
@@ -43,6 +44,7 @@ internal struct FRadioAPI {
             let artworkURL = URL(string: artwork)
             completionHandler(artworkURL)
         }).resume()
+        */
     }
     
     private static func getURL(with term: String) -> URL? {
