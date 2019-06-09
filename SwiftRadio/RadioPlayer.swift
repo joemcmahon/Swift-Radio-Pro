@@ -124,7 +124,7 @@ extension RadioPlayer: FRadioPlayerDelegate {
         if parts.isEmpty {
             updateTrackMetadata(artistName: "RadioSpiral", trackName: "Captivating Electronica", releaseName: "")
         } else if parts.count == 3 {
-            updateTrackMetadata(artistName: parts.first!, trackName: parts.last!, releaseName: parts[1])
+            updateTrackMetadata(artistName: parts.first!, trackName: parts[1], releaseName: parts.last!)
         } else if parts.count == 2 {
             updateTrackMetadata(artistName: parts.first!, trackName: parts.last!, releaseName: "")
         } else {

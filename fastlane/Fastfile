@@ -15,6 +15,15 @@ platform :ios do
   desc "Generate new localized screenshots, no cover"
   lane :screenshots do
     capture_screenshots(
+    devices: [
+    #"iPhone 6",
+    #"iPhone 6 Plus",
+    #"iPhone 5",
+    #"iPhone 4s",
+    #"iPad Retina",
+    #"iPad Pro",
+    "iPhone Xs Max",
+    ],
     scheme: "SwiftRadioSnapshots",
     output_simulator_logs: true,
     clear_previous_screenshots: false,
@@ -44,7 +53,12 @@ platform :ios do
 
   desc "Release for real"
   lane :release do
-    build_app
-    upload_to_app_store       # Upload the screenshots and the binary to iTunes
+    increment_build_number
+    build_app(
+      scheme: "SwiftRadio",
+    )
+    upload_to_app_store(       # Upload the screenshots and the binary to iTunes
+      username: "joe.mcmahon@gmail.com",
+    )
   end
 end
